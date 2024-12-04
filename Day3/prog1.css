@@ -1,0 +1,27 @@
+/* Container for the entire 3x3 matrix */
+.container {
+    display: block;
+    width: 320px;  /* Width of the matrix */
+    height: 320px; /* Height of the matrix */
+    margin: 50px auto;  /* Center the matrix */
+  }
+  
+  /* Each cell inside the matrix */
+  .cell {
+    width: 100px;  /* Fixed width of each cell */
+    height: 100px; /* Fixed height of each cell */
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px; /* Gap between cells */
+    border: 2px solid black; /* Border for each cell */
+  }
+  
+  /* Images inside the cells */
+  .cell img {
+    max-width: 80%; /* Image size will scale to 80% of the cell width */
+    max-height: 80%; /* Image size will scale to 80% of the cell height */
+    height: auto;
+    width: auto;
+  }
+  

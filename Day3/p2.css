@@ -1,0 +1,27 @@
+/* Container for the entire 3x3 grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal-width columns */
+    grid-template-rows: repeat(3, 1fr);     /* Creates 3 equal-height rows */
+    gap: 10px;  /* Adds gap between rows and columns */
+    width: 400px;  /* Total width of the grid */
+    height: 400px; /* Total height of the grid */
+    margin: 50px auto;  /* Center the grid on the page */
+  }
+  
+  /* Each cell inside the grid */
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black; /* Border for each cell */
+  }
+  
+  /* Images inside the cells */
+  .cell img {
+    max-width: 100%; /* Image size will scale to 80% of the cell width */
+    max-height: 100%; /* Image size will scale to 80% of the cell height */
+    height: auto;
+    width: auto;
+  }
+  
